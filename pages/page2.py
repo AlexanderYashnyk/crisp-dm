@@ -18,3 +18,7 @@ st.markdown(hide_st_style, unsafe_allow_html=True)
 
 st.title('page2')
 
+if st.session_state['input'] == '':
+    st.write('nothing')
+else:
+    st.write(st.session_state['input'])
